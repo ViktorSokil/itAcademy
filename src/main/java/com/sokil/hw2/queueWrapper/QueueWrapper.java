@@ -5,11 +5,8 @@ import java.util.List;
 import java.util.Queue;
 
 public class QueueWrapper {
-    public List asList(Queue queue){
-        List list = new ArrayList();
-        while (queue.poll()!= null){
-            list.add(queue.peek());
-        }
-        return list;
+    public <T> List<T> asList(Queue<T> queue){
+        List<T> list = new ArrayList<>(queue);
+        return  list;
     }
 }
