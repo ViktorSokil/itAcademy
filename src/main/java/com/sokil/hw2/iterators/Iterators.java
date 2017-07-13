@@ -8,8 +8,6 @@ public class Iterators {
         Set<Person> personSet = new TreeSet<Person>();
 
         for (Person person: persons){
-            /*Integer occurances = hashMap.get(person);
-            hashMap.put(element, occurances == null ? 1: occurances+1);*/
             if (person.getAge() >= age){
                 personSet.add(person);
             }
