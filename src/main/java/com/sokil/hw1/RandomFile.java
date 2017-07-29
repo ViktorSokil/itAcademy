@@ -3,12 +3,10 @@ package com.sokil.hw1;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.Random;
 
 public class RandomFile {
 
     public void createAndWriteFile(String path, int byt)  {
-        Random generator = new Random();
         File file = new File(path, "hello.txt");
         try {
             if (file.createNewFile() == true){
